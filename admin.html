@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style1.css">
+    <div class="bgmain">
+
+      <img class="bgmain" src="mm.jpg" alt="">
+    </div>
+
+    <title>Administrator</title>
+    <div id="side" class="sidebar">
+      <div class="header">
+        <img src="logo.png" alt="">
+      </div>
+      <div class="menu">
+        <div type="button" onclick="chker('side')"></div>
+          <a href="#" class="link" id="home" onclick="home()"><ion-icon name="home-outline"></ion-icon>&emsp;Home</a>
+
+        <br>
+
+          <a href="#" class="link" id="admin" onclick="admin()"><ion-icon name="person-outline"></ion-icon>&emsp;Class List</a>
+
+        <br>
+
+          <a href="#" class="link" id="courses" onclick="course()"><ion-icon name="book-outline"></ion-icon>&emsp;Courses</a>
+
+        <br>
+
+          <a href="#" class="link" id="ans" onclick="anou()"><ion-icon name="megaphone-outline"></ion-icon>&emsp;Announcements</a>
+
+        <br>
+
+          <a href="#" class="link" id="settings"><ion-icon name="settings-outline"></ion-icon>&emsp;Settings</a>
+
+        <br>
+
+          <a href="Login.html" class="link"><ion-icon name="log-out-outline"></ion-icon>&emsp;Sign out</a>
+
+        <br>
+
+      </div>
+    </div>
+    <div id="man"class="mains">
+      <div id="homePage" class="homePage">
+          <img class="anns" src="Home/1.jpg" alt="">
+          <img class="anns" src="Home/2.jpg" alt="">
+          <img class="anns" src="Home/3.jpg" alt="">
+          <div class="ano">
+            <div id="contenter"class="con">
+                            </div>
+          </div>
+      </div>
+    </div>
+    <div id="adminn"class="adminPages">
+      <div class="studentOp">
+        <div class="words">
+          Student List
+        </div>
+        <div class="butt">
+          <input class="edit" type="button" value="Add Student" onclick="addRow()">
+        </div>
+        <table class="geh">
+              <tr>
+                  <td class="a">
+                  Surname
+                  </td>
+                  <td class="b">
+                  First Name
+                  </td>
+                  <td class="c">
+                  Middle initial
+                  </td>
+                  <td class="d">
+                  Student ID
+                  </td>
+                  <td class="e">
+                  Program
+                  </td>
+                  <td class="f">
+                  Year Level
+                  </td>
+              </tr>
+          </table>
+
+            <div id="content"class="con">
+                            </div>
+      </div>
+    </div>
+    <div id="crs"class="cor">
+      <div class="corOp">
+        <div class="wordses">
+          Course list
+        </div>
+        <div class="buttt">
+          <input class="editt" type="button" value="Add Course" onclick="addRows()">
+        </div>
+        <table class="gehh">
+              <tr>
+                  <td class="aa">
+                  Student
+                  </td>
+                  <td class="bb">
+                  Course ID
+                  </td>
+                  <td class="cc">
+                  Grade
+                  </td>
+              </tr>
+          </table>
+            <div id="contentt"class="con">
+                            </div>
+      </div>
+    </div>
+    <div id="ment" class="mentt">
+      <div class="mentOp">
+        <div class="wordsess">
+        Announcements
+        </div>
+        <div class="buttts">
+          <textarea id="name" rows="8" cols="80" class="textar"></textarea>
+          <input class="editts" type="button" value="Make Announcement" onclick="submit('name')">
+        </div>
+
+      </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="java.js"></script>
+</html>
