@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style2.css">
+    <div class="bgmain">
+
+      <img class="bgmain" src="mm.jpg" alt="">
+    </div>
+
+    <title>Student</title>
+    <div id="side" class="sidebar">
+      <div class="header">
+        <img src="logo.png" alt="">
+      </div>
+      <div class="menu">
+        <div type="button" onclick="chker('side')"></div>
+          <a href="#" class="link" id="home" onclick="home()"><ion-icon name="home-outline"></ion-icon>&emsp;Home</a>
+
+        <br>
+
+          <a href="#" class="link" id="admin" onclick="admin()"><ion-icon name="person-outline"></ion-icon>&emsp;View Course grade</a>
+
+        <br>
+
+
+          <a href="#" class="link" id="ans" onclick="anou()"><ion-icon name="megaphone-outline"></ion-icon>&emsp;Course feedback</a>
+
+
+        <br>
+
+          <a href="#" class="link" id="courses" onclick="course()"><ion-icon name="book-outline"></ion-icon>&emsp;Financial record</a>
+
+        <br>
+
+          <a href="#" class="link" id="settings"><ion-icon name="settings-outline"></ion-icon>&emsp;Settings</a>
+
+        <br>
+
+          <a href="Login.html" class="link"><ion-icon name="log-out-outline"></ion-icon>&emsp;Sign out</a>
+
+        <br>
+
+      </div>
+    </div>
+    <div id="man"class="mains">
+      <div id="homePage" class="homePage">
+          <img class="anns" src="Home/1.jpg" alt="">
+          <img class="anns" src="Home/2.jpg" alt="">
+          <img class="anns" src="Home/3.jpg" alt="">
+          <div class="ano">
+            <div id="contenter"class="con">
+                            </div>
+          </div>
+      </div>
+    </div>
+    <div id="adminn"class="grades">
+      <h1>Course Grade</h1>
+      <div class="coursegrade">
+        <table class="tab1">
+          <tr>
+            <td class="r1"><h3>Course ID</h3></td>
+            <td class="r2"><h3>Grade</h3></td>
+            <td class="r3"><h3>Percentage</h3></td>
+          </tr>
+          <tr>
+            <td class="s1"><h3>SAF102</h3></td>
+            <td class="s2"><h3>100/100</h3></td>
+            <td class="s3"><h3 class="per">100%</h3></td>
+          </tr>
+          <tr>
+            <td class="s1"><h3>MATH161</h3></td>
+            <td class="s2"><h3>100/100</h3></td>
+            <td class="s3"><h3 class="per">100%</h3></td>
+          </tr>
+          <tr>
+            <td class="s1"><h3>CPE151</h3></td>
+            <td class="s2"><h3>90/100</h3></td>
+            <td class="s3"><h3 class="sem">90%</h3></td>
+          </tr>
+          <tr>
+            <td class="s1"><h3>CS104</h3></td>
+            <td class="s2"><h3>100/100</h3></td>
+            <td class="s3"><h3 class="per">100%</h3></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="crs"class="finans">
+      <h1>Financial Standing</h1>
+      <div class="coursegrade">
+        <h2 class="studID">Student ID: 2019122901</h2>
+        <table class="tab1">
+          <tr>
+            <td class="f1"><h3>Date</h3></td>
+            <td class="f2"><h3>Course ID</h3></td>
+            <td class="f3"><h3>TF</h3></td>
+          </tr>
+          <tr>
+            <td class="g1"><h3>03/21/2022</h3></td>
+            <td class="g2"><h3>SAF102</h3></td>
+            <td class="g3"><h3>$3,435</h3></td>
+          </tr>
+          <tr>
+            <td class="g1"><h3>03/21/2022</h3></td>
+            <td class="g2"><h3>MATH161</h3></td>
+            <td class="g3"><h3>$3,435</h3></td>
+          </tr>
+          </tr>
+        </table>
+        <div class="total">
+          <h2 class="tots">Total Account Balance: $6,870</h2>
+          <hr>
+        </div>
+      </div>
+    </div>
+    <div id="ment" class="mentt">
+      <div class="mentOp">
+        <div class="wordsess">
+        Course Feedback
+        </div>
+        <div class="buttts">
+          <div class="corsel">
+            <select class="year">
+                    <option disabled selected>Select Course</option>
+                    <option value="saab">SAF102</option>
+                    <option value="saab">MATH161</option>
+                    <option value="saab">CPE151</option>
+                    <option value="saab">CS104</option>
+                  </optgroup>
+
+                </select>
+          </div>
+          <textarea id="name" rows="8" cols="80" class="textar" placeholder="Write your Feedback here"></textarea>
+          <input class="editts" type="button" value="Submit Feedback" onclick="submit('name')">
+        </div>
+
+      </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="java2.js"></script>
+</html>
